@@ -1,86 +1,258 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Home | Eduard Fadieiev</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" dir="ltr">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500|Montserrat:400,600|Roboto+Slab&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!--<link rel="stylesheet" href="css/offcanvas.css">-->
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body class="d-flex flex-column h-100">
-        <!-- Navigation -->
-        <header>
-            <nav class="navbar navbar-expand-md fixed-top navbar-dark navbotcolor">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><span style="color: #89c891;"><</span> Eduard Fadieiev <span style="color: #89c891;">/></span></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="navbarCollapse" class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-md-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">
-                                    HOME
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="skills.html">SKILLS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!-- Main content -->
-        <main class="flex-shrink-0" role="main">
-            <div class="container">
-                <div class="row py-md-5">
-                    <div class="col-lg-8 offset-lg-2 py-md-5">
-                        <h1 class="text-custom-color display-4 font-weight-bold" >Hello, I'm</h1>
-                        <h1 class="text-custom-color display-4 font-weight-bold">a Front-end Developer</h1>  
-                        <h1 class="text-custom-color">Based in Bratislava, Slovakia</h1>                      
-                    </div>
-                    <div class="col-lg-8 offset-lg-2 py-md-5">
-                        <p class="lead text-custom-color">My favorite hobby is making cool stuff while drinking coffee &#9749;</p>                        
-                    </div>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Eduard Fadieiev</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--favicon-->
+    <!-- Using FontAwesome -->
+    <script type="text/javascript" src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- Import poppins font family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Scroll animation files -->
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <script type="text/javascript" src="js/aos.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+    <nav class="navigation">
+      <!-- Logo-->
+      <a href="#" class="logo"><span style="color: #89c891;"><</span> Eduard Fadieiev <span style="color: #89c891;">/></span></a>
+
+      <!-- Menu button -->
+      <input type="checkbox" class="menu-btn" id="menu-btn">
+      <label for="menu-btn" class="menu-icon">
+          <span class="nav-icon"></span>
+      </label>
+      <!-- Menu -->
+      <ul class="menu">
+        <li><a href="#main">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- Hire me button -->
+      <a href="#contact" class="hire-me">
+        Hire Me
+        <!-- Icon-->
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </nav>
+    <!-- Main section -->
+    <section id="main">
+      <!-- Text -->
+          <div class="main-text">
+            <h1>Hey, I'm a Front-End Developer</h1>
+            <p>Based in Bratislava, Slovakia</p>
+            <p>My favorite hobby is making cool stuff while drinking coffee</p>
+            <!-- Buttons -->
+            <div class=main-btns>
+              <a href="#" class="download-cv-btn">Download CV</a>
+              <a href="#contact" class="hire-me-btn">Hire Me</a>
             </div>
-        </main>
-        <footer class="footer mt-auto py-3 navbotcolor" id="footer">
-            <div class="container">
-                <p class="text-white text-center">Made with <span class="heart"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by Eduard Fadieiev</p>
+          </div>
+      <!-- Background -->
+      <div class="model-bg">
+        <img src="./images/model-bg.svg" data-aos="fade" data-aos-duration="3000">
+      </div>
+
+    </section>
+
+    <!-- Skills section -->
+    <section id="skills">
+      <!-- Skills text sectioin -->
+      <div class="skills-text-section">
+        <!-- Heading -->
+        <div class="skill-heading" data-aos="fade">
+          <span>My Skills</span>
+          <h2>My Experties</h2>
+        </div>
+        <!-- Skills Box Container -->
+        <div class="s-box-container">
+          <!--Skill box -->
+          <div class="skill-box" data-aos="fade-up">
+            <!-- Box icon -->
+            <div class="s-box-icon">
+              <i class="fab fa-html5"></i>
             </div>
-        </footer>
+            <!-- Box text -->
+            <div class="s-box-text">
+              <strong>Hyper Text Markup Language (HTML)</strong>
+              <p>Semantic markup for structuring content</p>
+            </div>
+          </div>
+          <div class="skill-box" data-aos="fade-up">
+            <!-- Box icon -->
+            <div class="s-box-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <!-- Box text -->
+            <div class="s-box-text">
+              <strong>Cascading Style Sheets (CSS)</strong>
+              <p>Cascade style for pages to look great</p>
+            </div>
+          </div>
+          <div class="skill-box" data-aos="fade-up">
+            <!-- Box icon -->
+            <div class="s-box-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <!-- Box text -->
+            <div class="s-box-text">
+              <strong>JavaScript (JS)</strong>
+              <p>JavaScript language for awersome features</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Skill image section -->
 
+      <div class="skill-img">
+        <img src="images/skill2.png" data-aos="fade">
+      </div>
+    </section>
+  <!-- Introduction -->
+    <section id="introduction">
+      <div class="intro-heading" data-aos="fade">
+        <strong>Self Introduction</strong>
+        <p>Hi, I'm Eduard Fadieiev from Bratislava, Slovakia. </p>
+        <p>
+          I just began my journey into Front-end programming with
+          <abbr title="HyperText Markup Language" class="initialism">
+            <span class="http-text">
+              <</span>HTML<span class="http-text">></span>
+          </abbr> ,
+          <abbr title="Cascading Style Sheets" class="initialism">
+            <span class="css-text">{</span>CSS<span class="css-text">}</span>
+          </abbr> and, of course,
+          <abbr title="JavaScript programming language" class="initialsim">
+            <span class="js-text">[</span>JavaScript <span class="js-text">]</span>
+          </abbr>
+        </p>
+        <p>
+          I love creating user interfaces that are intuitive, convenient and beautiful. Of course, I’m paying attention to performance and accessibility that I consider to be highly important.
+        </p>
+      </div>
+    </section>
 
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <!-- Heading -->
+        <strong class="portfolio-heading" data-aos="fade-up">
+            Portfolio (Names are clickable)
+        </strong>
+        <!-- Portfolio box container -->
+        <div class="portfolio-box-container">
+            <!-- Portfolio box -->
+            <div class="portfolio-box" data-aos="fade-up">
+                <!-- Heading -->
+                <strong>Portfolio Project</strong>
+                <!-- Details -->
+                <p>
+                    It was made as a part of FreeCodeCamp's Responsive Web Design Projects.
+                    <br>
+                    It was a first version of my portfolio page.
+                </p>
+                <img class="portfolio-img" src="images/portfolio-page.png" alt="portfolio page screenshot">
+            </div>
+            <div class="portfolio-box" data-aos="fade-up">
+                <!-- Heading -->
+                <a href="https://codepen.io/eddy_fadeev/full/dyMymMy" target="_blank"><strong>Landing Page</strong></a>
 
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="js/bootstrap.min.js" async defer></script>
-        <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+                <!-- Details -->
+                <p>
+                    It was made as a part of FreeCodeCamp's Responsive Web Design Projects.
+                    <br>
+                    With HTML5, CSS3, Bootstrap under the hood.
+                </p>
+                <img class="portfolio-img" src="images/landing-page.png" alt="landing page screenshot">
+            </div>
+            <div class="portfolio-box" data-aos="fade-up">
+                <!-- Heading -->
+                <a href="https://codepen.io/eddy_fadeev/full/LYNYjRW" target="_blank"><strong>Survey Form</strong></a>
+
+                <!-- Details -->
+                <p>
+                    It was made as a part of FreeCodeCamp's Responsive Web Design Projects.
+                    <br>
+                    Made with HTML5, CSS3, Bootstrap.
+                </p>
+                <img class="portfolio-img" src="images/survey-form.png" alt="survey page screenshot">
+            </div>
+            <div class="portfolio-box" data-aos="fade-up">
+                <!-- Heading -->
+                <a href="https://codepen.io/eddy_fadeev/full/XWdmyBE" target="_blank"><strong>Documentation Page</strong></a>
+                <!-- Details -->
+                <p>
+                    It was made as a part of FreeCodeCamp's Responsive Web Design Projects.
+                    <br>
+                    Made only with HTML5, CSS3.
+                </p>
+                <img class="portfolio-img" src="images/documentation-page.png" alt="documentation page screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in touch -->
+    <section id="get-in-touch" data-aos="fade-up">
+        <span>Still not conviced for Hiring?</span>
+        <a id="contact_btn">Get In Touch</a>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <!-- Form -->
+        <form data-aos="fade-up" method="post" action="mailto:eddy.fadeev@gmail.com" name="contact_form" enctype="text/plain">
+            <!-- Full Name -->
+            <input id="text_area" type="text" name="fullname" placeholder="Full Name" required>
+            <!-- email -->
+            <input type="email" name="email" placeholder="example@gmail.com" required>
+            <!-- Write me something-->
+            <textarea name="message" placeholder="Write Something...."></textarea>
+            <!-- Send button -->
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <span class="copyright">Made with <span class="heart"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;by Eduard Fadeev</span>
+        <!-- Footer social links -->
+        <div class="footer-social">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/eddy.fadeev" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/eddyfadeev/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/eddyfadeev" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- Telegram -->
+            <a href="https://t.me/eddy_fadeev" target="_blank">
+                <i class="fab fa-telegram-plane"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        AOS.init();
+        document.getElementById('contact_btn' || 'hire_me').onclick = function() {
+            document.getElementById('text_area').focus();
+        };
+    </script>
+
+</body>
+
 </html>
